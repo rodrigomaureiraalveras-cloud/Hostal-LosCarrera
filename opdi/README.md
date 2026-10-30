@@ -10,13 +10,13 @@ npm install
 npm run dev
 ```
 
-y abrí <http://localhost:3000>.
+y abre <http://localhost:3000>.
 
 ## Dónde se cambia cada cosa
 
-- **Textos, precios, servicios, preguntas, datos de contacto:** `src/lib/content.ts`. Ningún componente tiene texto propio.
+- **Textos, precios (en pesos, + IVA), servicios, preguntas, datos de contacto:** `src/lib/content.ts`. Ningún componente tiene texto propio.
 - **Fotos y videos:** `src/lib/assets.ts`. Por ahora usan material de muestra (musgo) desde un CDN;
-  subí tus propias fotos y tu film con los mismos nombres y apuntá `NEXT_PUBLIC_ASSET_BASE` a tu bucket.
+  sube tus propias fotos y tu film con los mismos nombres y apunta `NEXT_PUBLIC_ASSET_BASE` a tu bucket.
 - **Colores y tipografías:** el bloque `@theme` de `src/app/globals.css` (celeste del logo = `--color-sky`).
 - **Logo:** `OpdiMark` en `src/components/ui/Icons.tsx` y el favicon en `src/lib/assets.ts`.
 

@@ -1,6 +1,6 @@
 import { IMAGES } from "./assets";
 
-/* Todo el texto visible del sitio vive acá. Las claves en inglés, los comentarios en español.
+/* Todo el texto visible del sitio vive aquí. Las claves en inglés, los comentarios en español.
    Las etiquetas de interfaz del frame de Figma (Home, Services, Login…) quedan en inglés. */
 
 export const BRAND = {
@@ -43,13 +43,13 @@ export const UI = {
   clientArea: "Área de cliente",
 };
 
-/* Datos de contacto: reemplazalos por los reales. */
+/* Datos de contacto: reemplázalos por los reales. */
 export const CONTACT_INFO = {
   email: "hola@opdi.cl",
   phone: "+56 9 0000 0000",
   phoneHref: "+56900000000",
-  studio: ["100% remoto", "Reuniones por video"],
-  hours: "Lun a vie, 9 a 18 h",
+  studio: ["100% remoto", "Reuniones por videollamada"],
+  hours: "Lunes a viernes, 9 a 18 h",
 };
 
 export const SOCIAL = ["Instagram", "LinkedIn", "GitHub", "Behance"];
@@ -104,8 +104,8 @@ export const PHILOSOPHY = {
   eyebrow: "About",
   title: ["Del boceto", "a la tienda."],
   body: [
-    "Opdi es un estudio de soluciones digitales con una idea",
-    "fija: que la tecnología trabaje para tu negocio y no al",
+    "Opdi es un estudio chileno de soluciones digitales con una",
+    "idea fija: que la tecnología trabaje para tu negocio y no al",
     "revés. Diseñamos, programamos y publicamos sitios, apps",
     "web y apps móviles que cargan rápido y se mantienen fácil.",
   ],
@@ -119,7 +119,7 @@ export const PHILOSOPHY_POINTS = [
   {
     n: "01",
     title: "Descubrir",
-    body: "Entendemos tu negocio antes de abrir el editor. Objetivos, usuarios y métricas: en una semana tenés el alcance, el plazo y el presupuesto cerrados.",
+    body: "Entendemos tu negocio antes de abrir el editor. Objetivos, usuarios y métricas: en una semana tienes el alcance, el plazo y la cotización cerrados.",
   },
   {
     n: "02",
@@ -152,114 +152,114 @@ export type Product = {
   features: string[];
 };
 
-/* Precios de referencia: ajustalos a tu tarifa. */
+/* Precios de referencia en pesos chilenos, más IVA: ajústalos a tu tarifa. */
 export const PRODUCTS: Product[] = [
   {
     id: "landing",
     name: "Landing Pro",
     family: "Web",
-    tagline: "Una página que convierte",
-    price: "desde US$ 450",
+    tagline: "Una página que vende",
+    price: "desde $290.000 + IVA",
     timeline: "1–2 semanas",
     stack: "Next.js",
     support: "3 meses",
     platform: "Sitio web",
     image: IMAGES.mossBranch,
     description:
-      "Una sola página pensada para vender una cosa. Carga en menos de un segundo, se ve perfecta en el teléfono y llega con analítica y formulario conectados.",
-    features: ["Diseño a medida", "SEO técnico", "Analítica", "Formulario conectado"],
+      "Una sola página pensada para vender un producto o servicio. Carga en menos de un segundo, se ve perfecta en el celular y llega con botón de WhatsApp, formulario y Google Analytics conectados.",
+    features: ["Diseño a medida", "Botón de WhatsApp", "SEO técnico", "Dominio .cl"],
   },
   {
     id: "corporate",
     name: "Sitio Corporativo",
     family: "Web",
     tagline: "Tu empresa, bien contada",
-    price: "desde US$ 1.200",
+    price: "desde $690.000 + IVA",
     timeline: "3–4 semanas",
     stack: "Next.js + CMS",
     support: "6 meses",
     platform: "Sitio web",
     image: IMAGES.mossRock,
     description:
-      "Varias páginas, un gestor de contenidos que cualquiera de tu equipo puede usar y un blog listo para posicionar. Vos editás; nosotros cuidamos que no se rompa.",
-    features: ["CMS editable", "Blog", "Multi-idioma", "Hosting incluido"],
+      "Hasta diez páginas, un administrador de contenidos que cualquiera de tu equipo puede usar y un blog listo para posicionar en Google. Tú editas; nosotros cuidamos que no se caiga.",
+    features: ["Administrador de contenidos", "Blog", "Correos corporativos", "Hosting el primer año"],
   },
   {
-    id: "saas",
-    name: "Plataforma SaaS",
+    id: "ecommerce",
+    name: "Tienda Online",
+    family: "Web",
+    tagline: "Vende 24/7 con Webpay",
+    price: "desde $1.190.000 + IVA",
+    timeline: "4–6 semanas",
+    stack: "Next.js + Shopify",
+    support: "6 meses",
+    platform: "E-commerce",
+    image: IMAGES.mossDark,
+    description:
+      "Catálogo, carro de compras y pagos con Webpay, Mercado Pago o transferencia. Integrada con Chilexpress, Starken o Blue Express para que el despacho se cotice solo.",
+    features: ["Webpay y Mercado Pago", "Despacho integrado", "Boleta electrónica", "Inventario"],
+  },
+  {
+    id: "system",
+    name: "Sistema a Medida",
     family: "App web",
-    tagline: "Tu producto en la nube",
-    price: "desde US$ 4.800",
-    timeline: "8–12 semanas",
+    tagline: "Adiós a las planillas",
+    price: "desde $2.490.000 + IVA",
+    timeline: "6–10 semanas",
     stack: "React + Node",
     support: "12 meses",
     platform: "App web",
-    image: IMAGES.mossDark,
-    description:
-      "Usuarios, planes de pago, panel de administración y una API documentada. La base para lanzar tu producto digital y cobrar por él desde el primer mes.",
-    features: ["Cuentas y roles", "Pagos recurrentes", "API documentada", "Panel admin"],
-  },
-  {
-    id: "dashboard",
-    name: "Panel de Gestión",
-    family: "App web",
-    tagline: "Tus datos, en orden",
-    price: "desde US$ 2.400",
-    timeline: "5–7 semanas",
-    stack: "React + Postgres",
-    support: "6 meses",
-    platform: "App web",
     image: IMAGES.mossRidge,
     description:
-      "Reemplazá las planillas por una herramienta interna a tu medida: inventario, ventas, reservas o lo que tu operación necesite, con reportes que se actualizan solos.",
-    features: ["Reportes en vivo", "Exportar a Excel", "Permisos por área", "Integraciones"],
+      "Una plataforma web hecha para tu operación: reservas, inventario, ventas, clientes o lo que necesites, con usuarios y permisos por área y reportes que se actualizan solos.",
+    features: ["Usuarios y permisos", "Reportes en vivo", "Exportar a Excel", "Integración con el SII"],
   },
   {
     id: "apk",
     name: "App Android",
     family: "Móvil",
     tagline: "Tu APK, instalable hoy",
-    price: "desde US$ 2.900",
+    price: "desde $1.890.000 + IVA",
     timeline: "6–8 semanas",
     stack: "React Native",
     support: "6 meses",
-    platform: "APK / Play Store",
+    platform: "APK / Google Play",
     image: IMAGES.mossRidge,
     description:
-      "Una app de Android con APK firmado para instalar directo o publicar en Play Store. Notificaciones, modo sin conexión y la ficha de la tienda lista.",
-    features: ["APK firmado", "Play Store", "Notificaciones push", "Modo offline"],
+      "Una app de Android con APK firmado para instalar directo o publicar en Google Play. Notificaciones, modo sin conexión y la ficha de la tienda lista para subir.",
+    features: ["APK firmado", "Google Play", "Notificaciones push", "Modo sin conexión"],
   },
   {
     id: "crossplatform",
     name: "App iOS + Android",
     family: "Móvil",
     tagline: "Una base, dos tiendas",
-    price: "desde US$ 5.600",
+    price: "desde $3.990.000 + IVA",
     timeline: "10–14 semanas",
     stack: "React Native",
     support: "12 meses",
-    platform: "App Store + Play Store",
+    platform: "App Store + Google Play",
     image: IMAGES.mossWave,
     description:
-      "Una sola base de código publicada en App Store y Play Store. Pagos dentro de la app, inicio de sesión social y un panel web para administrarla.",
-    features: ["iOS y Android", "Pagos in-app", "Login social", "Panel web"],
+      "Una sola base de código publicada en App Store y Google Play. Pagos dentro de la app, inicio de sesión con Google o Apple y un panel web para administrarla.",
+    features: ["iOS y Android", "Pagos en la app", "Login con Google y Apple", "Panel web"],
   },
 ];
 
 export const PRODUCTS_COPY = {
   eyebrow: "Services",
   title: ["Web, app y APK."],
-  lede: "Seis servicios, tres familias y un mismo equipo detrás. Elegí dónde querés que viva tu proyecto y te mostramos lo que encaja.",
+  lede: "Seis servicios, tres familias y un mismo equipo detrás. Elige dónde quieres que viva tu proyecto y te mostramos lo que te sirve.",
   tablistLabel: "Familias de servicios",
   showing: (shown: number, total: number) => `Mostrando ${shown} de ${total} servicios.`,
   empty: "Todavía no hay servicios en esta familia.",
   specs: { timeline: "Plazo", stack: "Stack", support: "Soporte", price: "Precio" },
-  cta: "Pedir presupuesto",
+  cta: "Pedir cotización",
 };
 
 /* ── 03 Impacto ───────────────────────────────────────────────────────── */
 export const STATS = [
-  { label: "Projects Shipped", value: 148, suffix: "", caption: "Sitios, apps web y apps móviles desde 2019" },
+  { label: "Projects Shipped", value: 148, suffix: "", caption: "Sitios, tiendas, sistemas y apps móviles desde 2019" },
   { label: "On-time Delivery", value: 96, suffix: "%", caption: "Proyectos entregados en la fecha pactada" },
   { label: "Usuarios en nuestras apps", value: 1240, suffix: " k", caption: "Sumando todas las apps que mantenemos" },
   { label: "Lighthouse promedio", value: 97, suffix: "", caption: "Rendimiento medido en cada sitio publicado" },
@@ -281,7 +281,7 @@ export const JOURNAL = [
     date: "18 Oct 2026",
     readingTime: "6 min",
     image: IMAGES.mossDark,
-    excerpt: "Tres caminos para llegar al teléfono de tu cliente. Cuándo conviene cada uno y cuánto cuesta mantenerlo.",
+    excerpt: "Tres caminos para llegar al celular de tu cliente. Cuándo conviene cada uno y cuánto cuesta mantenerlo.",
   },
   {
     id: "velocidad",
@@ -290,12 +290,12 @@ export const JOURNAL = [
     date: "02 Oct 2026",
     readingTime: "4 min",
     image: IMAGES.mossRidge,
-    excerpt: "Bajamos la carga de una tienda online de 4,1 a 1,3 segundos. Esto es exactamente lo que cambiamos.",
+    excerpt: "Bajamos la carga de una tienda online chilena de 4,1 a 1,3 segundos. Esto es exactamente lo que cambiamos.",
   },
   {
     id: "playstore",
     kicker: "Taller",
-    title: "Publicar en Play Store sin sustos",
+    title: "Publicar en Google Play sin sustos",
     date: "15 Sep 2026",
     readingTime: "8 min",
     image: IMAGES.mossWave,
@@ -315,23 +315,27 @@ export const JOURNAL_COPY = {
 export const FAQ = [
   {
     q: "¿Cuánto tarda un proyecto?",
-    a: "Una landing está lista en una o dos semanas, un sitio corporativo en tres o cuatro, y una app web o móvil entre seis y catorce según el alcance. Te damos fecha cerrada antes de empezar.",
+    a: "Una landing está lista en una o dos semanas, un sitio corporativo en tres o cuatro, una tienda online en cuatro a seis, y un sistema o app móvil entre seis y catorce según el alcance. Te damos fecha cerrada antes de empezar.",
   },
   {
     q: "¿Qué diferencia hay entre una app web, un APK y una app nativa?",
-    a: "La app web corre en el navegador y no se instala. El APK es la app de Android que se instala en el teléfono, desde Play Store o directo. Una app iOS + Android se publica en las dos tiendas desde una misma base de código.",
+    a: "La app web corre en el navegador y no se instala. El APK es la app de Android que se instala en el celular, desde Google Play o directo. Una app iOS + Android se publica en las dos tiendas desde una misma base de código.",
   },
   {
     q: "¿El código y el dominio son míos?",
-    a: "Sí. Al cierre te entregamos el repositorio y los accesos al hosting, al dominio y a las cuentas de las tiendas. Nada queda a nombre de Opdi.",
+    a: "Sí. El dominio .cl queda inscrito a tu nombre en NIC Chile, y al cierre te entregamos el repositorio y los accesos al hosting y a las cuentas de las tiendas. Nada queda a nombre de Opdi.",
   },
   {
     q: "¿Ofrecen mantenimiento?",
-    a: "Todos los proyectos incluyen un período de soporte. Después podés sumar un plan mensual con actualizaciones, respaldos y mejoras.",
+    a: "Todos los proyectos incluyen un período de soporte. Después puedes sumar un plan mensual con actualizaciones, respaldos y mejoras.",
+  },
+  {
+    q: "¿Cuánto cuesta mantener el sitio después?",
+    a: "Los planes de mantención parten en $35.000 + IVA al mes e incluyen hosting, respaldos, actualizaciones de seguridad y una bolsa de horas para cambios pequeños.",
   },
   {
     q: "¿Cómo se paga?",
-    a: "En tres partes: al aprobar la propuesta, al validar el diseño y al publicar. Facturamos en moneda local o en dólares.",
+    a: "En tres partes: 40% al aprobar la cotización, 30% al validar el diseño y 30% al publicar. Emitimos factura electrónica en pesos chilenos y puedes pagar por transferencia o con tarjeta vía Webpay.",
   },
 ];
 
@@ -343,12 +347,12 @@ export const FAQ_COPY = {
 /* ── 06 Contacto ──────────────────────────────────────────────────────── */
 export const CONTACT = {
   eyebrow: "Contact",
-  title: ["Contanos", "tu idea."],
-  lede: "Contanos qué querés construir y te respondemos con una propuesta en menos de dos días hábiles. Sin formularios eternos.",
+  title: ["Cuéntanos", "tu idea."],
+  lede: "Cuéntanos qué quieres construir y te respondemos con una cotización en menos de dos días hábiles. Sin formularios eternos.",
   details: [
     { term: "Estudio", value: CONTACT_INFO.studio.join("\n") },
     { term: "Correo", value: CONTACT_INFO.email },
-    { term: "Teléfono", value: CONTACT_INFO.phone },
+    { term: "WhatsApp", value: CONTACT_INFO.phone },
     { term: "Horario", value: CONTACT_INFO.hours },
   ],
   fields: {
@@ -358,15 +362,15 @@ export const CONTACT = {
     message: "Mensaje",
     namePlaceholder: "Tu nombre",
     emailPlaceholder: "nombre@correo.com",
-    messagePlaceholder: "Qué querés construir, plazos, si ya tenés diseño…",
+    messagePlaceholder: "Qué quieres construir, plazos, si ya tienes diseño…",
   },
   submit: "Enviar mensaje",
   sending: "Enviando",
-  note: "Al enviar aceptás que guardemos tus datos para responderte. Nada más.",
+  note: "Al enviar aceptas que guardemos tus datos para responderte. Nada más.",
   errors: {
-    name: "Decinos cómo te llamás.",
+    name: "Dinos cómo te llamas.",
     email: "Ese correo no parece válido.",
-    message: "Contanos un poco más (mínimo 10 caracteres).",
+    message: "Cuéntanos un poco más (mínimo 10 caracteres).",
   },
   doneTitle: "Mensaje enviado",
   doneLine: (first: string, email: string, product: string) =>
@@ -380,7 +384,7 @@ export const LOGIN = {
   title: "Área de cliente",
   heading: { login: "Entrar", register: "Crear cuenta" },
   lede: {
-    login: "Seguí el avance de tu proyecto, descargá entregables y pedí cambios.",
+    login: "Sigue el avance de tu proyecto, descarga entregables y pide cambios.",
     register: "Una cuenta para tus proyectos, tus accesos y tu historial de soporte.",
   },
   email: "Correo",
@@ -389,18 +393,18 @@ export const LOGIN = {
   forgot: "Olvidé la contraseña",
   submit: { login: "Entrar", register: "Crear cuenta" },
   sending: "Enviando",
-  switchPrompt: { login: "¿Todavía no tenés cuenta?", register: "¿Ya tenés cuenta?" },
-  switchAction: { login: "Creá una", register: "Entrá" },
+  switchPrompt: { login: "¿Todavía no tienes cuenta?", register: "¿Ya tienes cuenta?" },
+  switchAction: { login: "Crea una", register: "Entra" },
   errors: {
-    emailEmpty: "Escribí tu correo.",
+    emailEmpty: "Escribe tu correo.",
     emailInvalid: "Ese correo no parece válido.",
-    passwordEmpty: "Escribí tu contraseña.",
+    passwordEmpty: "Escribe tu contraseña.",
     passwordShort: "Mínimo 8 caracteres.",
   },
   done: { login: "Sesión iniciada", register: "Cuenta creada" },
   doneLine: {
     login: (email: string) =>
-      `Te dimos entrada como ${email}. Desde el área de cliente podés seguir el avance de tu proyecto.`,
+      `Te dimos entrada como ${email}. Desde el área de cliente puedes seguir el avance de tu proyecto.`,
     register: (email: string) => `Mandamos un correo a ${email} para confirmar la cuenta.`,
   },
   back: "Volver al sitio",
@@ -420,7 +424,7 @@ export const FOOTER = {
   navTitle: "Navegar",
   socialTitle: "Social",
   studioTitle: "Estudio",
-  studio: ["100% remoto", "Reuniones por video", CONTACT_INFO.email],
+  studio: ["100% remoto", "Reuniones por videollamada", CONTACT_INFO.email],
   rights: (year: number) => `© ${year} Opdi Soluciones Digitales. Todos los derechos reservados.`,
   legal: ["Aviso legal", "Privacidad", "Cookies", "Garantía"],
   backToTop: "Volver arriba",

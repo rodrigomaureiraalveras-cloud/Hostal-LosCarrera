@@ -1,5 +1,5 @@
 /* Única fuente de URLs de imágenes y video. Para usar tus propias fotos y tu
-   film, subilos con los mismos nombres y apuntá NEXT_PUBLIC_ASSET_BASE a tu bucket. */
+   film, súbelos con los mismos nombres y apunta NEXT_PUBLIC_ASSET_BASE a tu bucket. */
 const DEFAULT_BASE = "https://pub-36eefd528bbb4e28bdef0ce39a1018e0.r2.dev/Prompt/40green/public";
 const BASE = (process.env.NEXT_PUBLIC_ASSET_BASE ?? DEFAULT_BASE).replace(/\/$/, "");
 

@@ -37,7 +37,7 @@ export default function Counter({
 
   return (
     <span ref={ref} className={className} style={style}>
-      {display.toLocaleString("es-ES")}
+      {display.toLocaleString("es-CL")}
       {suffix}
     </span>
   );
